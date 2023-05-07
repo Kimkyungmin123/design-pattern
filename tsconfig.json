@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNEXT",
-    "module": "ESNext",
-    "noEmit": true,
-    "strict": true,
-    "moduleResolution": "node",
-    "typeRoots": ["./node_modules/@types"],
-    "esModuleInterop": true,
+    "target": "es5",
+    "allowJs": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "CommonJS",
+    "outDir": "dist"
   },
-  "exclude": ["node_modules", ".build"]
+  "ts-node": {
+    "esm": true
+  },
+  "exclude": ["node_modules"]
 }
