@@ -1,5 +1,5 @@
 // 출력할 데이터 제공
-export default class Article {
+export default class Note {
   constructor(
     private title: string,
     private content: string[],
